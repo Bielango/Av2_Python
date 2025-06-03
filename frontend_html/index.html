@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo Inteligente de Planilhas de Produtos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-table me-2"></i>Resumo Inteligente de Planilhas
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="fas fa-home me-1"></i>Início
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="results.html">
+                            <i class="fas fa-table-list me-1"></i>Resultados
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="container mt-4">
+        
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h1 class="display-5 fw-bold text-primary">Resumo Inteligente de Planilhas</h1>
+                <p class="lead">Filtre e extraia informações específicas das suas planilhas Excel de forma simples e eficiente.</p>
+            </div>
+        </div>
+
+        <!-- Área principal -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                
+                <div class="card shadow-lg mb-4 border-0 rounded-3">
+                    <div class="card-header bg-primary text-white py-3">
+                        <h4 class="mb-0">
+                            <i class="fas fa-upload me-2"></i>Upload de Planilha Excel
+                        </h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <p class="card-text">
+                            Selecione um arquivo Excel (.xlsx) contendo seus dados de produtos para começar.
+                        </p>
+                        <div class="upload-area mb-4" id="uploadArea">
+                            <div class="upload-icon">
+                                <i class="fas fa-file-excel fa-3x text-primary"></i>
+                            </div>
+                            <p class="upload-text">Arraste e solte seu arquivo Excel aqui</p>
+                            <p class="upload-text-small">ou</p>
+                            <label for="fileInput" class="btn btn-primary">
+                                <i class="fas fa-folder-open me-2"></i>Selecionar Arquivo
+                            </label>
+                            <input type="file" id="fileInput" accept=".xlsx" class="d-none">
+                            <p class="upload-info mt-2 text-muted">Tamanho máximo: 16MB</p>
+                        </div>
+
+                        <div class="file-info alert alert-info d-none" id="fileInfo">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-file-excel fa-2x me-3 text-primary"></i>
+                                <div>
+                                    <h5 class="mb-1" id="fileName">nome_do_arquivo.xlsx</h5>
+                                    <p class="mb-0" id="fileSize">Tamanho: 1.2 MB</p>
+                                </div>
+                                <button type="button" class="btn-close ms-auto" id="removeFile"></button>
+                            </div>
+                        </div>
+                        
+                        <div class="d-grid gap-2">
+                            <button type="button" class="btn btn-primary btn-lg" id="uploadButton">
+                                <i class="fas fa-upload me-2"></i>Carregar Arquivo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+
+    <!-- Rodapé -->
+    <footer class="footer mt-5 py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">Projeto AV2 Python - Resumo Inteligente de Planilhas &copy; 2025</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
